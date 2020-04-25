@@ -1,7 +1,7 @@
 import io from "socket.io-client";
 
-// const CHAT_SERVER = "http://77.120.108.119:9999";
-const CHAT_SERVER = "http://localhost:9999";
+const CHAT_SERVER = "http://77.120.108.119:9999";
+// const CHAT_SERVER = "http://localhost:9999";
 
 const socket = io(CHAT_SERVER, {
     transport: ["polling"],

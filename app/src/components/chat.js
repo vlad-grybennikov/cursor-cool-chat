@@ -116,6 +116,9 @@ export default class Chat extends React.Component {
                 count
             })
         })
+        socket.on("new-tweet", (tweet) => {
+           console.log(tweet) ;
+        });
         socket.on(RECEIVE_EVENTS_LIST.newMessage, ({message, name}) => {
             this.setState((prevState) => {
                 return {
